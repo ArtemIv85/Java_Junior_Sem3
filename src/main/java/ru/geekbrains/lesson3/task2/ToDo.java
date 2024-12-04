@@ -32,6 +32,11 @@ public class ToDo implements Externalizable {
         this.isDone = false;
     }
 
+    public ToDo(String title, boolean isDone) {
+        this.title = title;
+        this.isDone = isDone;
+    }
+
     //endregion
 
     //region Методы
@@ -64,7 +69,7 @@ public class ToDo implements Externalizable {
     @Override
     public void readExternal(ObjectInput in) throws IOException, ClassNotFoundException {
         title = (String) in.readObject();
-        isDone = in.readBoolean();
+        isDone = (boolean) in.readBoolean();
     }
     //endregion
 }

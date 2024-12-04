@@ -22,7 +22,7 @@ public class ToDoListApp {
     public static void addNewTask(Scanner scanner, List<ToDo> tasks){
         System.out.println("Введите название новой задачи");
         String newTaskTitle = scanner.nextLine();
-        tasks.add( new ToDo(newTaskTitle));
+        tasks.add( new ToDo(newTaskTitle,false));
         saveTasksToFile(FILE_JSON, tasks);
         saveTasksToFile(FILE_BIN, tasks);
         saveTasksToFile(FILE_XML, tasks);

@@ -63,9 +63,9 @@ public class Program {
 
     static  List<ToDo> prepareTasks(){
         ArrayList<ToDo> list = new ArrayList<>();
-        list.add(new ToDo("Сходить в магазин за продуктами"));
-        list.add(new ToDo("Погулять с собакой"));
-        list.add(new ToDo("Заменить лампочку"));
+        list.add(new ToDo("Сходить в магазин за продуктами",false));
+        list.add(new ToDo("Погулять с собакой",false));
+        list.add(new ToDo("Заменить лампочку",false));
         return list;
     }
 }
